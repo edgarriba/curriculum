@@ -1,0 +1,223 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+%%======================================================================
+%% See the original template at
+%% http://mirrors.ctan.org/macros/latex/contrib/moderncv/examples/template.tex
+%% if you want more options for configuration
+%%======================================================================
+
+%%----------------------------------------------------------------------
+%% Preamble
+%%----------------------------------------------------------------------
+
+%\moderncvtheme[blue,roman]{classic}
+
+%%% Character encoding
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%
+%%% Fonts
+%\usepackage{textcomp}
+%\usepackage[protrusion=true,expansion=true]{microtype}
+%% Bitstream Charter with mathdesign
+%\usepackage[charter]{mathdesign} % serif: Bitstream Charter
+%\usepackage[scaled]{beramono} % truetype: Bistream Vera Sans Mono
+%\usepackage[scaled]{helvet} % sans-serif: Helvetica
+%
+%%% Adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+%
+%%% Personal data
+%\makeatletter
+%\protected@edef\mobilesymbol{\protect\color{black}\mobilesymbol}
+%\makeatother
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+
+\firstname{\textcolor{black}{Edgar}}
+\familyname{\textcolor{black}{Riba Pi}}
+\title{Curriculum Vitae}               
+\address{\textcolor{black}{Sant Jordi 1}}{\textcolor{black}{08756 La Palma de Cervell\'{o}}}    
+\mobile{+34 626 622 922}                    
+%\phone{+34 672 07 04}                      
+\email{edgar.riba@gmail.com}                      
+\photo[80pt]{picture.jpg}                         
+%\github{github.com/edgarriba}
+%\linkedin{linkedin.com/in/edgarriba}
+
+% to show numerical labels in the bibliography; only useful if you make
+% citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\patchcmd{\makelettertitle}% <cmd>
+  {\raggedright \@opening}% <search>
+  {\@opening}% <replace>
+  {}{}% <success><failure>
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%Section
+\section{\textsc{Personal Details}}
+
+\cvline{Date of Birth}{\small 23\textsuperscript{rd}of April 1986\normalsize}
+\cvline{Place of Birth}{\small Barcelona, Spain\normalsize}
+%\cvline{Citienship}{\small Spanish\normalsize}
+%\cvline{Civil Status}{\small Lone\normalsize}
+%\cvcomputer{Citizenship}{\small <Citisenship>\normalsize}{Driving License}{\small <License> \normalsize}
+%\cvline{Elance}{\small \url{<Link to profile>}\normalsize}
+\cvline{LinkedIn}{\small \url{https://www.linkedin.com/in/edgarriba}\normalsize}
+%\cvline{Blog}{\small \url{<Link to profile>}\normalsize}
+%\cvline{Skype}{\small <skype>\normalsize}
+\cvline{GitHub}{\small \url{https://github.com/edgarriba}\normalsize}
+
+%Section
+\section{\textsc{Desired Employment and Skills}}
+
+\cvline{}{\large \textbf{Software Engineering Intern, MS/PhD, Summer 2016}}
+\cvline{}{\small Some experience in 3D object tracking, people detection, range sensors, 3D computer vision, Structure From Motion and Robotics using OpenCV, ROS, C++ and Python. Currently working on aerial image processing such as UAVs using machine learning techniques and multi/hyperspectral images in order to solve remote sensing lacks. }
+
+%\cvline{}{\large \textbf{PhD position}}
+
+%Section
+\section{\textsc{Experience}}
+
+\cventry{2015-Present}{PhD candidate/research}{Computer Vision Center}{Barcelona, Spain}{}{Pursuing a PhD in Computer Science using computer vision techniques applied to very high resolution remote sensing images with multi/hyperspectral data and machine learning in order to improve traditional aerial image processing.} % arguments 3 to 6 are optional
+
+\cventry{2015}{Google Summer of Code 2015 student}{}{Google}{OpenCV}{Integration of a robust Structure From Motion module in OpenCV using a customized version of Libmv (Library for Multiview Reconstruction) in order to allow developers to code apps for 3D reconstruction in C++ and Python.} % arguments 3 to 6 are optional
+
+\cventry{2015}{Intern Software Engineer}{Aldebaran Robotics - Sotfbank Group}{Paris, France}{}{Five months internship in the perception team working on a sensor fusion algorithm in order to solve people detection using OpenCV and ROS.} % arguments 3 to 6 are optional
+
+\cventry{2014}{Google Summer of Code 2014 student}{}{Google}{OpenCV}{Co-developed project in OpenCV implementing a real time pose estimation algorithm for textured objects. Additionally, I did a tutorial for PnP apps and finally the C++ implementation of the PnP method: A direct least-squares (DLS) in the calib3d OpenCV module.} % arguments 3 to 6 are optional
+
+\cventry{2014}{Research Assistant}{Institut de Rob\`{o}tica i Inform\`{a}tica Industrial}{Barcelona}{Spain}{Master thesis student working on geometric computer vision. "Implementation of a 3D pose estimation algorithm".} % arguments 3 to 6 are optional
+
+%\cventry{2014}{Automatic Control department}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{Grant of the catalan government to support the department professors.} % arguments 3 to 6 are optional
+
+%\cventry{2012}{Applied Physics department}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{Grant of the catalan government to support the department professors.} % arguments 3 to 6 are optional
+
+%\pagebreak
+
+%Section
+\section{\textsc{Education}}
+
+\cventry{2012-2015}{MSc in Automatic Control and Robotics}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{2 year course in Automatic Control, Robotics and Computer Vision.} % arguments 3 to 6 are optional
+
+\cventry{2008-2012}{BSc in Geomatics and Land Surveing}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{3 year course in Geomatics, Photogrammetry, Cartography, GIS and Civil Engineering.} % arguments 3 to 6 are optional
+
+\cventry{2012-Present}{BSc in Informatics Engineering}{Universitat Oberta de Catalunya}{Barcelona}{Spain}{4 year course in Computer Engineering.} % arguments 3 to 6 are optional
+
+%\cventry{2006-2008}{Technician in Construction Projects}{Escola del Treball de Barcelona}{Barcelona}{Spain}{2 year course in engineering drawings for specific engineering construction works.} % arguments 3 to 6 are optional
+
+\subsection{\textsc{Independent Courses}}
+%\cventry{2014}{"Autonomous Navigation for Flying Robots"}{edX}{Technische Universit\"{a}t M\"{u}nchen}{Online}{24 hours course about autonomous navigation with quadrotors, including topics such as probabilistic state estimation, linear control, and path planning.}  % arguments 3 to 6 are optional
+
+\cventry{2014}{"Introduction to Robot Operating System (ROS)"}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{20 hours course about design and program algorithms using ROS.}  % arguments 3 to 6 are optional
+
+\cventry{2014}{"Machine Learning"}{Coursera}{Standford University}{Online}{50 hours course about Machine Learning. Instructor: Andrew Ng.}  % arguments 3 to 6 are optional
+
+%\cventry{2013}{"Structural Pattern Recognition"}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{10 hours seminar. Speaker: Prof. Em. Dr. Horst Bunke. University of Bern.}  % arguments 3 to 6 are optional
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+%Section
+\section{\textsc{Voluntary Activity}} 
+
+\cventry{2010-Present}{Konfraria de la Vila del Ping\"{u}\'{i}}{OpenSource Community}{La Palma de Cervell\'{o}}{Spain}{Co-Founder organizing events and workshops in order to spread the open software culture.        
+ \url{http://www.konfraria.org/}} % arguments 3 to 6 are optional
+
+\cventry{November 2014}{HUMABOT Robot Competition 2014}{IEEE-RAS International Conference on Humanoid Robots}{Madrid}{Spain}{Member of the team NAO@UPC formed by the UPC university in order to program a NAO robot to participate in the Humabot competition held in Humanoids 2014.} % arguments 3 to 6 are optional
+
+\cventry{January 2014}{RoCKIn Camp 2014}{Sapienza University of Rome}{Rome}{Italy}{Campus to prepare the RoCKIn@Home competition as a member of the team MAiRAp formed by the company PAL Robotics and the UPC university in order to program the robot REEM.} % arguments 3 to 6 are optional
+
+%\cventry{Summer 2013}{Artificial Vision and Intelligent Systems Group (VIS)}{Universitat Polit\`{e}cnica de Catalunya}{Barcelona}{Spain}{Tasks related to computer vision, quadrotors and \textit{ROS}. Implementation of a "Position Based Visual Servoing of a Low-Cost Quadrocopter".} % arguments 3 to 6 are optional
+
+%Section
+\section{\textsc{Computer Skills}} 
+
+\cvline{Languages}{C++, Python, Java, Octave/Matlab.} 
+\cvline{Libraries}{OpenCV, ROS, Git, CMake, Boost, Ecto, OpenSfM, OpenDroneMaps Caffe.} 
+\cvline{Software}{GNU/Linux, Octave/Matlab, Eclipse, Sublime.} 
+\cvline{Typesettings}{\LaTeX, LibreOffice.} 
+
+%Sectionstart-end
+\section{\textsc{Languages}}
+
+\cvlanguage{Catalan}{Native}{}
+\cvlanguage{Spanish}{Native}{}
+\cvlanguage{English}{Full professional proficiency}{}
+
+	
+%Section
+%\section{\textsc{Interests and Hobbies}}
+%\cvline{}{\small Table Tennis, Trekking, RPG's computer games, Running, Mountain Bike.}
+
+
+%%----------------------------------------------------------------------------------------
+%%	COVER LETTER
+%%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+
+%\recipient{Perceiving Systems department}{Max Planck Institute for Intelligent Systems} % Letter recipient
+%%\recipient{TVAI Team}{} % Letter recipient
+%
+%\date{\today} % Letter date
+%\opening{To whom it may concern,} % Opening greeting
+%\closing{Yours faithfully,} % Closing phrase
+%%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%I have recently seen your advertisement in your website and I would therefore like to apply for a Ph.D. position in the Perceiving Systems Department.
+%
+%I am a student of the MSc in Automatic Control and Robotics at the UPC (Barcelona, Spain). I am currently finishing my master thesis graduating in June 2015. The MSc is focused on areas such as Mobile Robotics, Computer Vision, Pattern Recognition and Machine Learning, which are relevant for the position you are offering.
+%
+%During my studies I participated in some voluntary activities related to robotics like the EU project RoCKIn camp 2014 (Rome, Italy) and the HUMABOT Robot Competition during the 2014 IEEE-RAS International Conference on Humanoid Robots (Madrid, Spain). In both projects I managed the perception and computer vision tasks along with the ROS middleware. During the following semester I am going to do an internship in Aldebaran Robotics (Paris, France) working on an Open Source object recognition toolbox with ROS in order to complement my masters thesis.
+%
+%I am a passionate and motivated contributor of the Open Source community since I participated in the Google Summer of Code 2014 where I was involved in the OpenCV project implementing a PnP method and developing an application for real time pose estimation for textured objects. For the past four months I have continued the project as my masters thesis at the Institut de Rob\`{o}tica i Inform\`{a}tica Industrial (Barcelona, Spain) implementing an extended method of the EPnP.
+%
+%The motivation to applying for this position is due to the fact that I am strongly interested in the areas of research your department is specialised. For instance, I read about the last works done by Dr. A. Geiger in \textit{3D Traffic Scene Understanding from Movable Platforms} and \textit{Multi-View Priors for Learning Detectors from Sparse Viewpoint Data}. I found it really stimulating and arouse my interest to collaborate with him in further projects. Working with Dr. A. Geiger would be a great opportunity for my career and it would give me the possibility to improve my skills in object recognition, machine learning and robotics areas. Finally, another point worth to be mentioned is the good working environment that seems to be in your office (I love Rocko picture), which also encourage me to apply for the Ph.D. position.
+%
+%%I obtained my BSc in Geomatics and Civil Surveying Engineering at the Universitat Polit\`{e}cnica de Catalunya(UPC) in 2008. I am currently studying an MSc in Automatic Control and Robotics at the UPC, graduate in January 2015. The subjects which I am studying are relevant to the post such as Mobile Robotics, Path Planning, Advanced Topics in Computer Vision, Pattern Recognition and Machine Learning in addition to Human Robot Interaction.
+%
+%%For the past 6 months I have been preparing for the domestic service robots challenge of the EU project RoCKIn in collaboration with the UPC and PAL Robotics (Barcelona, Spain) using ROS along with the REEM robot platform. Moreover, I am participating in the HUMABOT Robot Competition during the International Conference on Humanoid Robots(Madrid, Spain) using ROS along with the NAO robot platform. In both projects I design and develop the code related to the perception tasks. Furthermore, I am working on my masters thesis at the Institut de Rob\`{o}tica i Inform\`{a}tica Industrial (Barcelona, Spain) implementing a method for Textured Objects Detection and Pose Estimation, which we plan to use in the aforementioned challenge.
+%
+%%I believe that I am a suitable candidate for this position, given my passion and constant curiosity to achieve hard goals related to solve mobile robotics, computer vision and machine learning problems. A reason which I think that hiring me will make your lives easier is the fact that this summer I was selected to participate in the Google Summer of Code 2014 in collaboration with the OpenCV organisation to contribute in the object detection field and in the new version release. I strongly support the premise that could be interesting for you having an expert team member who is used with this kind of Open Source libraries in order to develop perception algorithms and getting systems to really work.
+%
+%%Throughout this summer, I achieved many personal goals strengthening my experience in programming, computer vision and getting systems to really work.
+%
+%I hope that you will consider my application and please do not hesitate to contact me if you require any further information.
+%
+%I look forward to hearing from you.
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
